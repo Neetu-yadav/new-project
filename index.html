@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #0F2027; 
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar*/
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    position: sticky;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin:15px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding:10px 25px ;
+    transition: all 0.9s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+
+
+/*home section*/
+#home{
+    display: flex;
+    background-color: rgba(0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+.main h1{
+    margin-top: 70px;   
+}
+.resume{
+    text-align: center;
+    margin-top: 30px;
+}
+.resume a{
+    padding: 13px;
+    background-color: white;
+    color: #0F2027;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.resume a:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+}
+
+#home::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    background: url(csshtml.jpg) no-repeat center center/cover;
+    height: 700px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8;
+   
+}
+.headings{
+    font-family: century;
+    font-size: 25px;
+    color: #fff;
+    margin: 400px 0 px;
+}
+
+/* About me section */
+#About-me{
+   
+    
+    margin: 70px 70px;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+.conrtainer{
+    margin-top: 20px;
+}
+
+.img{
+    width: 45%;
+}
+.info{
+    width: 55%;
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 500;
+}
+#pic{
+    display:flex;
+
+}
+#pic img{
+    width:700px;
+    height:600px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+/* contact section */
+#Contact{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: brown;
+    color:white;
+    padding:20px;
+    padding-left: 80px;
+
+}
+.students{
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.students ul li{
+    margin-bottom: 10px;
+}
+.students ul li a{
+    color: wheat;
+    text-decoration: none;
+}
+.form{
+    display:flex;
+    box-sizing: border-box;
+flex-direction:column;
+    align-items: center;
+    margin:20px 0px ;
+}
+.input{
+    padding:12px;
+    margin:20px;
+    width:20%;
+}
+
+#send:hover{
+    cursor:pointer;
+    box-shadow: 0 0 10 px white;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about me">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="Home">
+        <div class="main">
+            <h1 class="name"> I AM</h1>
+            <h2 class="name"> NEETU YADAV</h2>
+        </div>
+        <div class="resume">
+            <h3><a href="NY resume.pdf" target="_blank">Resume</a></h3>
+        </div>
+    </section>
+
+    <section id="About-me">
+        <h1 class="headings">About me</h1>
+        <div class="conrtainer">
+            <div class="info">
+                <p>My name is neetu yadav I'm from ballia U.P.<br> Currently I'm living in kolkata west bengal<br>
+                    recently I completed my graduation from ewing christian college prayagraj
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+            <h1 class="headings">CONTACT</h1>
+            <div class="students">
+                <ul>
+                    <li><a href="christopher mrgan.jpg" target="_blank">C.Morgan</a></li>
+                    <li><a href="elizabeth holmes.jpg" target="_blank">E.Holmes</a></li>
+                    <li><a href="jhon doe.png" target="_blank">J.Doe</a></li>
+                    <li><a href="jonathan smith.png" target="_blank">J.Smith</a></li>
+                </ul>
+            </div>
+            <form action="" class="form">
+                <input type="text" name="Name" class="input" placeholder="Enter Your Name">
+                <input type="email" name="email" class="input" placeholder="Email">
+                <input type="Submit" value="SEND" id="send">
+            </form>
+    </section>
+</body>
+
+</html>
